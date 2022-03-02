@@ -10,15 +10,15 @@ const Header = ({ account, requestAccount }) => {
   return (
     <div className="bg-green-400 h-16">
       <div className="flex text-white p-2">
-        {/* <div className="p-4" onClick={goLink('goLink')}>
-          <Link to="/trade">Trade</Link>
-        </div> */}
-        <div className="p-4">
-          <Link to="/stake">Stake</Link>
+        <div className="p-4" onClick={goLink('goLink')}>
+          <Link to="/mint">Mint</Link>
         </div>
-        {/* <div className="p-4">
-          <Link to="/Liquidity">Liquidity</Link>
-        </div> */}
+        <div className="p-4">
+          <Link to="/offer_auction">Collection</Link>
+        </div>
+        <div className="p-4">
+          <Link to="/market">Market</Link>
+        </div>
         <div className="flex-grow"></div>
         <Button
           onClick={requestAccount}
