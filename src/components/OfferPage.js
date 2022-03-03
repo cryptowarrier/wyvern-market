@@ -112,25 +112,25 @@ const OfferPage = ({ account }) => {
       const secondData = iface.encodeFunctionData("transferFrom", [account, owner, parseEther(String(price))]);
       const firstCall = [erc721.address, 0, firstData];
       const secondCall = [erc20.address, 0, secondData];
-      const result = await exchange.atomicMatch_(
-        [
-          ...order,
-          erc721.address,
-          ...counterOrder,
-          erc20.address
-        ],
-        [
-          selector,
-          counterSelector
-        ],
-        params,
-        firstData,
-        counterParams,
-        secondData,
-        [0,0],
-        ZERO_BYTES32,
-        "dddd"
-      )
+      // const result = await exchange.atomicMatch_(
+      //   [
+      //     ...order,
+      //     erc721.address,
+      //     ...counterOrder,
+      //     erc20.address
+      //   ],
+      //   [
+      //     selector,
+      //     counterSelector
+      //   ],
+      //   params,
+      //   firstData,
+      //   counterParams,
+      //   secondData,
+      //   [0,0],
+      //   ZERO_BYTES32,
+      //   "dddd"
+      // )
     } catch (err) {
       console.log(err);
     }
