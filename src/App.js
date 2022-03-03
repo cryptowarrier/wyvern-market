@@ -15,8 +15,8 @@ import Market from './components/Market';
 const ScreenList = (props) => {
   let routes = useRoutes([
       { path: "/mint", element:<MintPage account={props.account}/> },
-      { path: "/offer_auction", element: <OfferPage account={props.account}/> },
-      { path: "/market", element: <Market account={props.account} /> },
+      { path: "/market", element: <OfferPage account={props.account}/> },
+      // { path: "/market", element: <Market account={props.account} /> },
   ]);
   return routes;
 };

@@ -93,7 +93,7 @@ const TokenCard = ({ id, account, owner }) => {
     <div className="bg-indigo-300 border border-white rounded-xl w-full text-white p-5">
       <div className="grid grid-cols-2 gap-4">
         <div>Owner</div>
-        <div>{ `${owner.substring(0, 5)}..${owner.substring(account.length - 5)}` }</div>
+        <div>{ `${owner.substring(0, 5)}..${owner.substring(42 - 5)}` }</div>
         <div>Id :</div>
         <div>{id}</div>
         <div>URI</div>

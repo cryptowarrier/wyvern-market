@@ -13,9 +13,9 @@ const Header = ({ account, requestAccount }) => {
         <div className="p-4" onClick={goLink('goLink')}>
           <Link to="/mint">Mint</Link>
         </div>
-        <div className="p-4">
+        {/* <div className="p-4">
           <Link to="/offer_auction">Collection</Link>
-        </div>
+        </div> */}
         <div className="p-4">
           <Link to="/market">Market</Link>
         </div>
